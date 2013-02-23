@@ -60,11 +60,16 @@ lorem.p = function (n) {
  * Returns an object with `el` and
  * `url` properties.
  *
+ * @param {Number} width
+ * @param {Number} height
+ * @param {String} category
+ * @param {Number} [index]
+ * @param {String} [text]
  * @return {Object}
  * @api public
  */
 
-lorem.img = function () {
+lorem.img = function (width, height, category, index, text) {
   var args = slice.call(arguments)
   var url = 'http://lorempixel.com/'+args.join('/')
   var img = document.createElement('img')

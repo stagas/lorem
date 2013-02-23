@@ -9,7 +9,7 @@ text and image placeholders
 
 ## API
 
-### lorem()
+### lorem(n:Number)
 
   Generate a lorem ipsum of word length `n`.
 
@@ -18,7 +18,7 @@ text and image placeholders
   Generate a paragraph element
   of lorem ipsum of word length `n`.
 
-### lorem.img()
+### lorem.img(width:Number, height:Number, category:String, [index]:Number, [text]:String)
 
   Generate a lorem ipsum image.
   Returns an object with `el` and
