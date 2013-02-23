@@ -1,0 +1,9 @@
+{
+  "name": "lorem",
+  "version": "0.0.1",
+  "description": "text and image placeholders",
+  "keywords": ["lorem","ipsum","placeholders"],
+  "author": "stagas",
+  "license": "MIT",
+  "scripts": ["index.js"]
+}

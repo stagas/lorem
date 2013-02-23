@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lorem</title>
+    <link rel="stylesheet" href="../build/build.css">
+  </head>
+  <body>
+    <div id="test"></div>
+    <script src="../build/build.js"></script>
+    <script>
+    var lorem = require('lorem')
+    var test = document.getElementById('test')
+
+    console.log(assert('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.'==lorem()))
+    test.appendChild(lorem.p(2))
+    console.log(assert('<p>Lorem ipsum</p>'==test.innerHTML))
+    test.appendChild(lorem.img(400,200,'cats').el)
+    console.log(assert(~test.innerHTML.indexOf('<p>Lorem ipsum</p><img')))
+
+    function assert (expr) {
+      if (!expr) throw new Error('problem')
+      return expr
+    }
+
+    </script>
+  </body>
+</html>
